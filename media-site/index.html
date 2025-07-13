@@ -1,0 +1,122 @@
+<!DOCTYPE html> 
+<html lang="en">
+	<head>
+    <title>Media</title> 
+    <!-- information to tell the browsers more about how to display this page --> 
+    <meta charset="utf-8"> 
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+      
+    <!-- link to the .css styling information--> 
+    <link rel="Stylesheet" href="styles.css" type="text/css"> 
+    
+		<!-- import the webpage's javascript file --> 
+		<script src="/script.js" defer></script>
+  </head>
+  
+  <body>
+    <h1 id="top">
+      Media
+    </h1>
+    
+    <!-- navigation bar -->
+    <p>
+      <a href="#jpg">jpg</a> &horbar; 
+      <a href="#png">png</a> &horbar; 
+      <a href="#gif">gif</a> &horbar; 
+      <a href="#video">video</a> &horbar; 
+      <a href="#audio">audio</a> &horbar; 
+      <a href="#bottom">bottom</a>
+      
+    </p>
+    
+    <!-- list with custom markers -->
+    <ul>
+      <li>This is a website with media (images, video, and audio)</li>
+      <li>This is a list with a custom bullet/marker</li>
+      <li>It's a png</li>
+    </ul>
+
+    <!-- jpg with caption and size change -->
+    <h2 id="jpg">jpg</h2>
+    <figure>
+      <a href="https://cdn.stocksnap.io/img-thumbs/960w/cookies-dessert_ATABRZWSAD.jpg">
+        <img width="400"
+          src="https://cdn.stocksnap.io/img-thumbs/960w/cookies-dessert_ATABRZWSAD.jpg"
+          alt="JPG of Macaroons"
+        >
+      </a>
+      <figcaption>This is a caption, click to open full size source image (image is resized)</figcaption>
+    </figure>
+    
+    <!-- png with caption and alt text -->
+    <h2 id="png">png</h2>
+    <div>
+      <img width="400"
+          id="breadPNG"
+          src="https://cdn.pixabay.com/photo/2018/05/02/02/02/bread-3367582_1280.png"
+          alt="PNG of Bread"
+          title="Bread"
+        >
+      <p>This is text next to a png image.<br>The png has alt text, a border, and a title.</p>
+    </div>
+    <div style="clear:both;"></div>
+    
+    <!-- gif with caption -->
+    <h2 id="gif">gif</h2>
+    <figure>
+      <img
+        src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjl1aDh3NWM5OXpxejFieGl5OHl3ZW5sN3FoMHdleDJqcWFsaDI4cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9qZEmFR8fs7CrCgy4T/giphy.gif"
+        alt="GIF of Avocado Toast"
+      >
+      <figcaption>gif of avocado toast</figcaption>
+    </figure>
+    
+    <!-- video with controls -->
+    <h2 id="video">video file with controls</h2>
+    <figure>
+      <video width="480" height="270" controls>
+        <source
+          src="https://cdn.pixabay.com/video/2018/02/10/14239-255658087_large.mp4"
+          type="video/mp4"
+        >
+        Your browser doesn't support the video tag.
+      </video>
+      <figcaption>
+        Video by AlekseiyPover on Pixabay:
+        <a href="https://cdn.pixabay.com/video/2018/02/10/14239-255658087_large.mp4">
+          Link
+        </a>
+        <br>The video is silent, and its size is changed to 480x270.</figcaption>
+    </figure>
+        
+    <!-- audio with controls -->
+    <h2 id="audio">audio with controls</h2>
+    <figure>
+      <audio controls>
+        <source
+          src="./piano.mp3"
+          type="audio/mp3"
+        >
+        your browser does not support the audio element
+      </audio>
+      <figcaption>
+        Music by 
+        <a href="https://pixabay.com/users/clavier-music-16027823/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=285589">
+          Clavier Clavier
+        </a> from 
+        <a href="https://pixabay.com/music//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=285589">Pixabay</a>
+      </figcaption>
+    </figure>
+    
+    <p><br><br><br></p>
+    
+    <!-- bottom of page-->
+    <p id="bottom">
+      <a href="#top">to top</a> 
+      <br>
+    </p>
+    
+  </body>
+</html>
+

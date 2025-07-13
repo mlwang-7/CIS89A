@@ -1,0 +1,65 @@
+/* external CSS*/
+/* general, applies to all text in the body/on the page */
+body {
+  font-size: 17px;
+  font-family: Sans-Serif;
+  text-align: center;
+  background-color:#FBF7F4;
+  color: #382F27;
+}
+
+/* only applies to h1 and top */
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: Sans-Serif;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #DA8171;
+  background-color: #EED2CC;
+}
+
+/* only applies to h2 */
+h2 {
+  font-size: 25px;
+  font-family: Sans-Serif;
+  margin-top: 4em;
+  color: #E8998D;
+}
+
+/* only applies to unordered lists */
+ul { 
+	margin-left: 3em;
+	list-style-image: url(https://cdn4.iconfinder.com/data/icons/breakfast-14/48/cutlery-48.png);
+	text-align: left;
+}
+
+/* applies to the breadPNG,
+makes the text be next to the img */
+#breadPNG {
+  float: left;
+  margin-left: 60px;
+  border: 5px solid #382F27;
+}
+
+/* applies to bottom, makes a color block */
+#bottom {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #EED2CC;
+}
+
+/* unvisited link */
+a:link {
+  color: blue;
+}
+
+/* visited link */
+a:visited {
+  color: red;
+}
+
+/* hover over link */
+a:hover {
+  color: pink;
+}
