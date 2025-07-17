@@ -1,66 +1,135 @@
 <!DOCTYPE html> 
 <html lang="en">
 	<head>
-    <title>CSS Styling</title> 
-    <meta charset="utf-8"> 
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
-      
-    <!-- link to the .css styling information --> 
-    <link rel="Stylesheet" href="style.css" type="text/css"> 
-  </head>
+        <title>CSS Styling</title> 
+        <meta charset="utf-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        
+        <!-- link to the .css styling information --> 
+        <link rel="Stylesheet" href="style.css" type="text/css"> 
+    </head>
   
-  <body>
-    <h1 id="top">
-        CSS Styling
-    </h1>
-    
-    <!-- navigation bar -->
-    <p class="nav">
-        <a class="button" href="#transition-h">transition</a> &horbar; 
-        <a class="button" href="#translation-h">translation</a> &horbar; 
-        <a class="button" href="#anim-h">animation</a> &horbar; 
-        <a class="button" href="#bottom">bottom</a>
-        <br>
-    </p>
-    <p><br></p>
+    <body>
+        <!-- unstyled default -->
+        <h1 id="top1">
+            CSS Styling
+        </h1>
+        
+        <!-- navigation bar -->
+        <p>
+            <a href="#transition-h1">transition</a> &horbar; 
+            <a href="#translation-h1">translation</a> &horbar; 
+            <a href="#anim-h1">animation</a> &horbar; 
+            <a href="#bottom1">bottom</a>
+            <br>
+        </p>
+        <p><br></p>
 
-    <!-- intro with list and paragraph -->
-    <ul>
-        This site uses different fonts:
-        <li>Heading 1 is Sixtyfour</li>
-        <li>Heading 2 is Workbench</li>
-        <li>Everything else is Inconsolata</li>
-        <li>Fallback for h1, h2 is Sans-Serif</li>
-        <li>Fallback for everything else is Monospace</li>
-    </ul>
-    <p class="wide">Paragraph with big spacing</p>
-    <p class="small">Small caps font variant</p>
-    <p>This is left aligned, rest of the page is center</p>
-    
-    <!-- transition -->
-    <h2 id="transition-h">transition</h2>
-    <div id="transition-box"> 
-        Hover to change the color.
-    </div>
-    <p class="space"><br></p>
+        <!-- intro with list and paragraph -->
+        <ul>
+            <li>This site uses different fonts</li>
+            <li>Heading 1 is Sixtyfour</li>
+            <li>Heading 2 is Workbench</li>
+            <li>Everything else is Inconsolata</li>
+            <li>Fallback for h1, h2 is Sans-Serif</li>
+            <li>Fallback for everything else is Monospace</li>
+        </ul>
+        <p>Paragraph with big spacing</p>
+        <p>Small caps font variant</p>
+        <p>This is left aligned, rest of the page is center</p>
+        
+        <!-- transition -->
+        <h2 id="transition-h1">transition</h2>
+        <div> 
+            Hover to change the color.
+        </div>
+        <p><br></p>
 
-    <!-- translation -->
-    <h2 id="translation-h">translation</h2>
-    <div id="translation-box">
-        Hover to change shape and rotate.
-    </div>
-    <p class="space"><br></p>
+        <!-- translation -->
+        <h2 id="translation-h1">translation</h2>
+        <div>
+            Hover to change shape and rotate.
+        </div>
+        <p><br></p>
 
-    <!-- animation -->
-    <h2 id=""anim-h>animation</h2>
-    <div id="anim-box"></div>
-    <p class="space"><br></p>
-    
-    <!-- bottom of page-->
-    <p class="nav" id="bottom">
-        <a class="button" href="#top">to top</a> 
-    </p>
-    <p><br></p>
+        <!-- animation -->
+        <h2 id="anim-h1">animation</h2>
+        <div>
+            <img 
+                src="otter.jpg"
+                alt="otter picture"
+                width="180"
+            >
+        </div>
+        <p><br></p>
+        
+        <!-- bottom of page-->
+        <p id="bottom1">
+            <a href="#top1">to top</a> 
+        </p>
+        <p><br></p>
+
+        <!-- same, but styled with CSS-->
+        <div class="styled">
+
+            <h1 id="top" class="h1s">
+                CSS Styling
+            </h1>
+            
+            <!-- navigation bar -->
+            <p class="nav ps">
+                <a class="button" href="#transition-h">transition</a> &horbar; 
+                <a class="button" href="#translation-h">translation</a> &horbar; 
+                <a class="button" href="#anim-h">animation</a> &horbar; 
+                <a class="button" href="#bottom">bottom</a>
+                <br>
+            </p>
+            <p><br></p>
+
+            <!-- intro with list and paragraph -->
+            <ul class="uls">
+                <li>This site uses different fonts</li>
+                <li>Heading 1 is Sixtyfour</li>
+                <li>Heading 2 is Workbench</li>
+                <li>Everything else is Inconsolata</li>
+                <li>Fallback for h1, h2 is Sans-Serif</li>
+                <li>Fallback for everything else is Monospace</li>
+            </ul>
+            <p class="wide ps">Paragraph with big spacing</p>
+            <p class="small ps">Small caps font variant</p>
+            <p class="ps">This is left aligned, rest of the page is center</p>
+            
+            <!-- transition -->
+            <h2 id="transition-h" class="h2s">transition</h2>
+            <div id="transition-box"> 
+                Hover to change the color.
+            </div>
+            <p class="space"><br></p>
+
+            <!-- translation -->
+            <h2 id="translation-h" class="h2s">translation</h2>
+            <div id="translation-box">
+                Hover to change shape and rotate.
+            </div>
+            <p class="space"><br></p>
+
+            <!-- animation -->
+            <h2 id="anim-h" class="h2s">animation</h2>
+            <div id="anim-box">
+                <img 
+                    src="otter.jpg"
+                    alt="otter picture"
+                    width="180"
+                >
+            </div>
+            <p class="space"><br></p>
+            
+            <!-- bottom of page-->
+            <p class="nav ps" id="bottom">
+                <a class="button" href="#top">to top</a> 
+            </p>
+            <p><br></p>
+        </div>
     </body>
 </html>

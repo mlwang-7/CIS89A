@@ -3,11 +3,10 @@
 /* import fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Sixtyfour&family=Workbench&display=swap');
 
-/* general, applies to all text in the body/on the page */
-body {
+/* general, applies to all text in the body/on the page under styled */
+.styled {
     font-size: 20px;
     font-family: "Inconsolata", monospace;
-    font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings:
         "wdth" 100;
@@ -17,10 +16,9 @@ body {
 }
 
 /* only applies to h1*/
-h1 {
+.h1s {
     font-size: 40px;
     font-family: "Sixtyfour", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-variation-settings:
@@ -33,10 +31,9 @@ h1 {
 }
 
 /* only applies to h2 */
-h2 {
+.h2s {
     font-size: 25px;
     font-family: "Workbench", sans-serif;
-    font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings:
         "BLED" 0,
@@ -46,7 +43,7 @@ h2 {
 }
 
 /* only applies to unordered lists */
-ul { 
+.uls { 
 	padding-left: 0;
     margin-left: 10vw;
     list-style-position: inside;
@@ -55,7 +52,7 @@ ul {
 }
 
 /* only applies to paragraph text */
-p {
+.ps {
     text-align: left;
     margin-left: 10vw;
 }
@@ -90,8 +87,9 @@ p {
 /* animation, changes color and shape */
 #anim-box {
     padding: 15px;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
+    border-radius: 5%;
     position: relative;
     background-color: darkblue;
     animation-name: sq-circ-line;
@@ -104,17 +102,14 @@ p {
     0% {
         background-color: midnightblue;
         left: 25vw;
-        border-radius: 0%;
     }
     50% {
         background-color: rebeccapurple;
         left: 75vw;
-        border-radius: 50%;
     }
     100% {
         background-color: midnightblue;
         left: 25vw;
-        border-radius: 0%;
     }
 }
 
