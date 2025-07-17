@@ -1,0 +1,171 @@
+/* external CSS*/
+
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Sixtyfour&family=Workbench&display=swap');
+
+/* general, applies to all text in the body/on the page */
+body {
+    font-size: 20px;
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    text-align: center;
+    color: black;
+    background-color: lightgray;
+}
+
+/* only applies to h1*/
+h1 {
+    font-size: 40px;
+    font-family: "Sixtyfour", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "BLED" 0,
+        "SCAN" 0;
+    padding: 20px;
+    color: midnightblue;
+    background-color: rgb(154, 184, 206);
+    border: 10px groove slategray;
+}
+
+/* only applies to h2 */
+h2 {
+    font-size: 25px;
+    font-family: "Workbench", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "BLED" 0,
+        "SCAN" 0;
+    color: darkslateblue;
+    padding: 8px;
+}
+
+/* only applies to unordered lists */
+ul { 
+	padding-left: 0;
+    margin-left: 10vw;
+    list-style-position: inside;
+	list-style-type: disc;
+	text-align: left;
+}
+
+/* only applies to paragraph text */
+p {
+    text-align: left;
+    margin-left: 10vw;
+}
+
+/*transition, changes color on hover*/
+#transition-box {
+    padding: 15px;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    background: lightblue;
+    transition: background 1.5s ease-in;
+}
+#transition-box:hover {
+    background: silver;
+}
+
+/* transformation, rotate and change shape on hover*/
+#translation-box {
+    padding: 15px;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    background: cadetblue;
+    transition: width 1s, height 1s, transform 1s;
+}
+#translation-box:hover {
+    width: 65vw;
+    transform: rotate(360deg) skewX(-20deg);
+}
+
+/* animation, changes color and shape */
+#anim-box {
+    padding: 15px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: darkblue;
+    animation-name: sq-circ-line;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+/* animation keyframs */
+@keyframes sq-circ-line {
+    0% {
+        background-color: midnightblue;
+        left: 25vw;
+        border-radius: 0%;
+    }
+    50% {
+        background-color: rebeccapurple;
+        left: 75vw;
+        border-radius: 50%;
+    }
+    100% {
+        background-color: midnightblue;
+        left: 25vw;
+        border-radius: 0%;
+    }
+}
+
+/* wide font */
+.wide {
+    letter-spacing: 3px;
+    word-spacing: 10px;
+}
+
+/* small caps font */
+.small {
+    font-variant: small-caps;
+}
+
+/* used to create big space */
+.space {
+    line-height: 150px;
+}
+
+/* button styling */
+.button {
+    background: steelblue;
+    color:black;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 5%;
+    text-decoration: none;
+}
+.button:hover {
+    background: lightsteelblue;
+}
+
+/* navigation bar/button centering */
+.nav {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* unvisited link */
+a:link {
+    color: black;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+}
+
+/* hover over link */
+a:hover {
+    color: navy;
+}
+
