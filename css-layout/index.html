@@ -1,0 +1,85 @@
+<!DOCTYPE html> 
+<html lang="en">
+	<head>
+        <title>CSS Layout</title> 
+        <meta charset="utf-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        
+        <!-- link to the .css styling information --> 
+        <link rel="Stylesheet" href="style.css" type="text/css"> 
+    </head>
+  
+    <body>
+        <!-- navigation bar -->
+        <div class="navbar">
+            <h1>CSS Layout</h1>
+            <a href="#footer1">Footer</a>
+            <a href="#grid1">Grid</a>
+            <a href="#bunnies1">Bunnies</a>
+            <a href="#top1">Top</a>
+        </div>
+
+        <!-- layout for the rest of the page-->
+        <div class="wrapper">
+            <!-- main content on site -->
+            <div class="page">
+                <!-- images -->
+                <div class="images-box">
+                    <img src="rabbit1.jpg" alt="Rabbit eating lettuce">
+                    <img src="rabbit2.jpg" alt="Rabbit chilling">
+                    <img src="rabbit3.jpg" alt="Rabbit eating plant">
+                </div>
+                
+                <!-- text -->
+                <article class="text">
+                    <h2 id="top1">welcome!</h2>
+                    <p>
+                        This site uses a flexbox for the layout. When the screen width is 600px or greater, 
+                        the left bar takes up 20% of the screen and the right side takes up 80%. Else,
+                        this side takes up 100% and goes on top, and the left side goes to the bottom.
+                    </p>
+
+                    <ul>
+                        <li>The navigation bar is fixed to the top of the page.</li>
+                        <li>Title of the page is floated left, navigation bar is floated right.</li>
+                        <li>The pictures of bunnies to the left are also in a flexbox.</li>
+                    </ul>
+
+                    <h3 id="bunnies1">bunnies</h3>
+                    <pre>૮₍•᷄ ࡇ •᷅₎ა</pre>
+                    <pre>૮ ˶ᵔ ᵕ ᵔ˶ ა</pre>
+                    <pre>
+/)/)
+( . .)
+( づ♡ 
+                    </pre>
+                    <pre>🐇🐇🐇</pre>
+
+                    <!-- grid -->
+                    <h3 id="grid1">grid</h3>
+                    <div class="grid-box">
+                        <div class="grid-item item1">
+                            this is a grid
+                        </div>
+                        <div class="grid-item item2">
+                            <img id="fern" src="fern.jpg" height="180" alt="Fern">
+                            image with a border, text wraps around it (img float left)
+                        </div>
+
+                        <div class="grid-item item3">
+                            :)
+                        </div>
+                    </div>
+                    <p><br><br></p>
+
+                </article>
+            </div>
+            
+            <!-- footer -->
+            <footer class="footer" id="footer1">
+                footer
+            </footer>
+        </div>
+    </body>
+</html>

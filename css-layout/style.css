@@ -1,0 +1,195 @@
+/* external CSS */
+/* applies to all */
+body {
+    color: black;
+}
+
+/* heading 1, page title */
+h1 {
+    font-size: 20px;
+    margin: 10px 2% 10px;
+}
+
+/* heading 2 */
+h2 {
+    font-size: 50px;
+    margin-top: 120px;
+    margin-left: 3%;
+    color: olivedrab;
+    font-weight: bold;
+}
+
+/* heading 3 */
+h3 {
+    font-size: 30px;
+    margin-top: 80px;
+    margin-left: 3%;
+    color: yellowgreen;
+    font-weight: bold;
+}
+
+/* paragraph formatting */
+p {
+    margin-left: 3%;
+    font-size: 17px;
+}
+
+/* pre-formatted text */
+pre {
+    font-size: 25px;
+    margin-left: 3.5%;
+}
+
+/* unordered list */
+ul {
+    font-size: 17px;
+    margin-left: 3%;
+    list-style-type: disc;
+}
+
+/* navigation bar */
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: burlywood;
+}
+
+/* navigation bar links */
+.navbar a {
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: ivory;
+}
+
+/* navigation bar links on hover */
+.navbar a:hover {
+    background: wheat;
+    color: black;
+}
+
+/* make the page title be on the left */
+.navbar h1{
+    float: left;
+}
+
+/* general page layout (page, footer) */
+.wrapper {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-height: 100vh;
+    margin-top: 40px;
+}
+
+/* main content layout (images, main) */
+.page {
+    display: flex;
+    flex: 1;
+}
+
+/* right side of page with text */
+.text {
+    background: aliceblue;
+    text-align: left;
+    width: 80%;
+    flex: 1 0 0;
+}
+
+/* left side of page with images */
+.images-box {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    background: silver;
+    flex: 1 0 0;
+}
+
+/* image formatting */
+.images-box img {
+    padding: 10px;
+}
+
+/* footer formatting */
+.footer {
+    background: tan;
+    text-align: center;
+    padding: 1em;
+}
+
+/* page layout when screen is less than 600px wide */
+@media (max-width: 599px) {
+    .page {
+        flex-direction: column;
+    }
+
+    .text {
+        order: 1;
+        flex: 1 0 0;
+        width: 100%;
+    }
+
+    .images-box {
+        order: 2;
+        flex: 1 0 0;
+        width: 100%;
+    }
+}
+
+/* screen layout for >600px wide */
+@media all and (min-width: 600px) {
+    .images-box     { flex: 2 0 0; }
+    .text           { flex: 8 0 0 }
+    .images-box     { order: 1; }
+    .text           { order: 2; }
+}
+
+/* grid */
+.grid-box {
+    display: grid;
+    gap: 10px;
+    background-color: olivedrab;
+    padding: 10px;
+    margin-left: 3%;
+    width: 600px;
+    max-width: 80vw;
+    font-size: 17px;
+    color: black;
+}
+
+/* boxes in the grid */
+.grid-item {
+    background-color: ivory;
+    padding: 20px;
+}
+
+/* top box */
+.item1 {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    height: 20px;
+}
+
+/* left box */
+.item2 {
+    grid-column: 1;
+    grid-row: 2 / span 2;
+}
+
+/* right box */
+.item3 {
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 2;
+}
+
+/* picture of fern, float left */
+#fern {
+    border: 4px double black;
+    float: left;
+    margin-right: 10px;
+}
