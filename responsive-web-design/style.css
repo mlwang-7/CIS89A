@@ -121,7 +121,8 @@ ul {
     border: 4px double black;
     float: left;
     margin-left: 3%;
-    margin-right: 3%;
+    margin-right: 30px;
+    margin-bottom: 20px;
     width: 40%;
 }
 
@@ -148,6 +149,10 @@ ul {
     #duck{
         width: 80vw;
     }
+
+    #facts {
+        clear: left;
+    }
 }
 
 /* page layout when screen is less than 500px wide */
@@ -161,7 +166,11 @@ ul {
         grid-template-columns: 1fr;
     }
 
-    #duck{
+    #duck {
         width: 70vw;
+    }
+
+    #facts {
+        clear: left;
     }
 }
