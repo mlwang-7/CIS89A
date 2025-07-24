@@ -1,0 +1,82 @@
+<!DOCTYPE html> 
+<html lang="en">
+	<head>
+        <title>RWD</title> 
+        <meta charset="utf-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        
+        <!-- link to the .css styling information --> 
+        <link rel="Stylesheet" href="style.css" type="text/css"> 
+    </head>
+  
+    <body>
+        <!-- navigation bar -->
+        <div class="navbar">
+            <h1>Responsive Web Design</h1>
+            <a href="#footer1">Footer</a>
+            <a href="#top1">Top</a>
+        </div>
+
+        <!-- layout for the rest of the page-->
+        <div class="grid-box">
+            <!-- left aside -->
+            <div class="left">
+                <h3>Grid Box</h3>
+                <ul>
+                    <li>Site layout made with grid</li>
+                    <li>Change the window size to see different layouts<br></li>
+                    <li>This is the left side</li>
+                </ul>
+                <p>There's 3 different layouts based on screen width</p>
+                <ul>
+                    <li>>= 1000px: left, main, right on same row, footer at bottom</li>
+                    <li>>= 600px: main on top, left and right same row, footer at bottom</li>
+                    <li>&lt;600: from top to bottom, main, left, right, footer</li>
+                </ul>
+            </div>
+
+             <!-- main content on site -->
+            <div class="main" id="top1">
+                <article>
+                    <h2>Welcome</h2>
+                    <p>This is the main part of the site</p>
+                    <p>A list of animals I like:</p>
+                    <ul>
+                        <li>Rabbits</li>
+                        <li>Cats</li>
+                        <li>Otters</li>
+                        <li>Ducks</li>
+                        <li>Dogs</li>
+                        <li>Pigs</li>
+                        <li>Deer</li>
+                    </ul>
+                </article>
+
+                <img src="duck.jpg" alt="Australian wood ducks by water" id="duck">
+
+                <p>Fun facts about ducks:</p>
+                <ul>
+                    <li>They can fly at speeds up to 60 mph</li>
+                    <li>They have accents</li>
+                    <li>They have excellent hearing and can detect sounds both above and below water</li>
+                    <li>They have good night vision</li>
+                </ul>
+            </div>
+
+             <!-- right aside -->
+            <div class="right">
+                <p>
+                    This is the right side
+                    <br>👍
+                </p>
+                <p>You can watch it move as you change the window size</p>
+            </div>
+            
+            <!-- footer -->
+            <footer class="footer" id="footer1">
+                Footer :D
+            </footer>
+        </div>
+    </body>
+</html>

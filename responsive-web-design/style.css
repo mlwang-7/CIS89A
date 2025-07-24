@@ -1,0 +1,167 @@
+/* external CSS */
+/* applies to all */
+body {
+    color: black;
+}
+
+/* heading 1, page title */
+h1 {
+    font-size: 20px;
+    margin: 10px 2% 10px;
+    color: lightgray;
+    font-family: sans-serif;
+}
+
+/* heading 2 */
+h2 {
+    font-size: 50px;
+    color: darkslategray;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+/* heading 3 */
+h3 {
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+/* paragraph formatting */
+p {
+    font-size: 17px;
+    font-family: sans-serif;
+}
+
+/* unordered list */
+ul {
+    font-size: 17px;
+    padding-bottom: 50px;
+    list-style-type: circle;
+    font-family: sans-serif;
+    padding-left: 30px;
+}
+
+/* navigation bar */
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(59, 59, 59);
+    font-family: sans-serif;
+}
+
+/* navigation bar links */
+.navbar a {
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: lightgray;
+}
+
+/* navigation bar links on hover */
+.navbar a:hover {
+    background: lightgray;
+    color: black;
+}
+
+/* make the page title be on the left */
+.navbar h1{
+    float: left;
+}
+
+/* grid layout */
+.grid-box {
+    display: grid;
+    background-color: darkslategray;
+    width: 100%;
+    font-size: 17px;
+    font-family: sans-serif;
+    color: black;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 50px;
+    grid-template-areas: 
+        "left main right"
+        "footer footer footer";
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+/* left box */
+.left {
+    grid-area: left;
+    background-color: lightslategray;
+    min-height: 300px;
+    padding: 30px;
+}
+
+/* main box */
+.main {
+    grid-area: main;
+    background-color: gainsboro;
+    min-height: 100vh;
+    padding: 50px;
+}
+
+/* right box */
+.right {
+    grid-area: right;
+    background-color: silver;
+    min-height: 300px;
+    padding: 30px;
+}
+
+/* picture of ducks floated left */
+#duck {
+    border: 4px double black;
+    float: left;
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 40%;
+}
+
+/* footer */
+.footer {
+    grid-area: footer;
+    background: rgb(59, 59, 59);
+    color: lightgray;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+/* page layout when screen is between 600-999px wide */
+@media (min-width: 600px) and (max-width: 999px) {
+    .grid-box {
+        grid-template-areas: 
+            "main main"
+            "left right"
+            "footer footer";
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #duck{
+        width: 80vw;
+    }
+}
+
+/* page layout when screen is less than 500px wide */
+@media (max-width: 599px) {
+    .grid-box {
+        grid-template-areas: 
+            "main"
+            "left"
+            "right"
+            "footer";
+        grid-template-columns: 1fr;
+    }
+
+    #duck{
+        width: 70vw;
+    }
+}
