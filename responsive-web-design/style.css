@@ -79,7 +79,7 @@ ul {
 .grid-box {
     display: grid;
     background-color: darkslategray;
-    width: 100vw;
+    width: 100%;
     font-size: 17px;
     font-family: sans-serif;
     color: black;
