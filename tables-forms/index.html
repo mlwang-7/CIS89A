@@ -1,0 +1,123 @@
+<!DOCTYPE html> 
+<html lang="en">
+	<head>
+        <title>Tables/Forms</title> 
+        <meta charset="utf-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        
+        <!-- link to the .css styling information --> 
+        <link rel="Stylesheet" href="style.css" type="text/css"> 
+    </head>
+  
+    <body>
+        <h1>Tables + Forms</h1>
+
+        <!-- table -->
+        <h2>Table</h2>
+        <table style="width:600px" id="table1">
+            <caption>this is a caption</caption>  
+            <tr style="height:40px">
+                <th colspan="3">table header</th>
+            </tr>
+            
+            <tr style="height:40px">
+                <th>column 1</th>
+                <th>column 2</th>
+                <th>column 3</th>
+            </tr>
+            
+            <tr style="height:40px">
+                <td rowspan="2">span 2 row</td>
+                <td colspan="2">span 2 column</td>
+            </tr>
+            
+            <tr style="height:40px">
+                <td class="table-right" >right aligned</td>
+                <td>here's a picture of lightning<br><img source="purple.jpg" alt="lightning in a purple sky"></td>
+            </tr>
+        </table>
+        <p><br><br><br></p>
+
+        <!-- tic tac toe table -->
+        <h2>Tic Tac Toe</h2>
+        <table>    
+            <tr>
+                <td class="tic-tac-toe">X</td>
+                <td class="tic-tac-toe">X</td>
+                <td class="tic-tac-toe">X</td>
+            </tr>
+
+            <tr>
+                <td class="tic-tac-toe">O</td>
+                <td class="tic-tac-toe">O</td>
+                <td class="tic-tac-toe"></td>
+            </tr>
+            
+            <tr>
+                <td class="tic-tac-toe">X</td>
+                <td class="tic-tac-toe"></td>
+                <td class="tic-tac-toe">O</td>
+            </tr>
+        </table>
+        <p><br><br><br></p>
+
+        <!-- form -->
+        <h2>Form</h2>
+        <form action="mailto:notreal@example.com">
+            <!-- text -->
+            <label for="drink"> 
+                favorite drink: <input type="text" id="drink" name="drink" value="milk">
+            </label>
+            <br>
+
+            <!-- radio buttons -->
+            <br>
+            <label for="temp">temperature:</label><br>
+            <input type="radio" id="hot" name="temp" value="hot">
+            <label for="hot">hot</label><br>
+            <input type="radio" id="cold" name="temp" value="cold">
+            <label for="cold">cold</label>
+            <br>
+
+            <!-- checkboxes -->
+            <br>
+            <label for="season">pick likable seasons: </label><br>
+            <input type="checkbox" id="spring" name="season" value="spring">
+            <label for="spring">spring</label><br>
+            <input type="checkbox" id="summer" name="season" value="summer">
+            <label for="summer">summer</label><br>
+            <input type="checkbox" id="fall" name="season" value="fall">
+            <label for="fall">fall</label><br>
+            <input type="checkbox" id="winter" name="season" value="winter">
+            <label for="winter">winter</label>
+            <br>
+
+            <!-- drop down menu -->
+            <br>
+            <label for="cookie">pick a cookie: </label>
+            <select id="cookie" name="cookie">
+                <option value="choco-chip">chocolate chip</option>
+                <option value="snickerdoodle" selected>snickerdoodle</option>
+                <option value="oat-raisin">oatmeal raisin</option>
+                <option value="sugar">sugar</option>
+                <option value="peanutbutter">peanut butter</option>
+                <option value="shortbread">shortbread</option>
+            </select>
+            <br>
+
+            <!-- color picker -->
+            <br>
+            <label for="pick-color">pick a color: </label>
+            <input type="color" id="pick-color" name="pick-color" value="#663399">
+            <br>
+
+            <!-- submit -->
+            <br>
+            <input type="submit" value="submit (mailto)">
+        </form>
+        
+        <p><br><br><br></p>
+        <hr>
+    </body>
+</html>
