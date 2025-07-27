@@ -30,11 +30,17 @@ h2 {
     font-weight: bold;
 }
 
+/* sets box sizing for all elements */
+* {
+  box-sizing: border-box;
+}
+
+
 /* formatting for all parts of table */
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
-    padding: 7px;
+    padding: 8px;
     margin-left: auto;
     margin-right: auto;
 }
