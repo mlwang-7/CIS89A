@@ -1,0 +1,154 @@
+/* external CSS */
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Yatra+One&display=swap');
+
+/* basic elements */
+body {
+    color: #23022E;
+	font-family: Roboto, sans-serif;
+}
+h1 {
+    font-size: 50px;
+	font-family: Yatra One, sans-serif;
+    color: #EFE4F0;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+h2 {
+    font-size: 20px;
+	font-family: Roboto, Verdana, sans-serif;
+    color: #b7c8a0;
+	text-decoration: dotted;
+	margin-top: 10px;
+	margin-bottom: 50px;
+}
+h3 {
+    font-size: 30px;
+	font-family: Yatra One;
+	text-transform: uppercase;
+    color: rebeccapurple;
+    font-weight: bold;
+}
+p {
+    font-size: 17px;
+}
+ul {
+    font-size: 17px;
+    padding-bottom: 40px;
+    list-style-type: disc;
+    padding-left: 30px;
+}
+abbr {
+	font-weight: bold;
+}
+
+
+/* specific divs */
+/* grid layout */
+.page-wrapper { 
+	display: grid;
+    background-color: indigo;
+    width: 100%;
+    font-size: 17px;
+    font-family: sans-serif;
+    color: #23022E;
+    min-height: 100vh;
+    margin: 0;
+    grid-template-areas: 
+        "sidebar intro"
+        "sidebar main";
+    grid-template-columns: 1fr 3fr;
+}
+
+/* intro, top box */
+.intro {
+    grid-area: intro;
+    background-color: rgb(92, 64, 120);
+    min-height: 300px;
+    padding: 50px;
+	color: whitesmoke;
+}
+.intro h3{
+	color: thistle;
+}
+.intro a:link{
+	color: #b9caa0;
+}
+.intro a:visited{
+	color: #92acb9;
+}
+
+/* main, bottom box */
+.main {
+    grid-area: main;
+    background-color: thistle;
+    min-height: 300px;
+    padding: 50px;
+}
+.main h3 {
+	color: rgb(92, 64, 120);
+}
+.main a:link{
+	color: #738559;
+}
+.main a:visited{
+	color: #3a4727;
+}
+.main footer {
+	margin-top: 50px;
+	padding-top: 50px;
+	text-align: center;
+	border: none;
+  	border-top: 2px dashed rgb(92, 64, 120);
+}
+.main footer a:link{
+	color: rgb(92, 64, 120);
+}
+.main footer a:visited{
+	color: rgb(64, 68, 120);
+}
+
+/* side bar */
+.sidebar {
+	grid-area: sidebar;
+    background-color: #EFE4F0;
+    min-height: 300px;
+    padding: 50px;
+}
+.sidebar h3 {
+	color: #81906C;
+}
+.design-name{
+	color: rgb(92, 64, 120);
+	text-decoration: underline;
+	font-size: 20px;
+	font-style: italic;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.designer-name{
+	color: #23022E;
+	text-decoration: none;
+	font-style: italic;
+}
+.select li{
+	font-style: italic;
+	margin-bottom: 0.6em;
+}
+.design-archives a:link, .zen-resources a:link{
+	color: rgb(92, 64, 120);
+}
+.design-archives a:visited, .zen-resources a:visited{
+	color: rgb(64, 68, 120);
+}
+
+/* page layout when screen is less than 900px wide */
+@media (max-width: 899px) {
+    .page-wrapper {
+        grid-template-areas: 
+			"intro"
+            "main"
+            "sidebar";
+        grid-template-columns: 1fr;
+    }
+}
