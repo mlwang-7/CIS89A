@@ -4,39 +4,39 @@
 
 /* basic elements */
 body {
-    color: #23022E;
+   	color: #23022E;
 	font-family: Roboto, sans-serif;
 }
 h1 {
-    font-size: 50px;
+    	font-size: 50px;
 	font-family: Yatra One, sans-serif;
-    color: #EFE4F0;
+   	 color: #EFE4F0;
 	text-transform: uppercase;
 	margin-bottom: 10px;
 }
 h2 {
-    font-size: 20px;
+    	font-size: 20px;
 	font-family: Roboto, Verdana, sans-serif;
-    color: #b7c8a0;
+    	color: #b7c8a0;
 	text-decoration: dotted;
 	margin-top: 10px;
 	margin-bottom: 50px;
 }
 h3 {
-    font-size: 30px;
+    	font-size: 30px;
 	font-family: Yatra One;
 	text-transform: uppercase;
-    color: rebeccapurple;
-    font-weight: bold;
+    	color: rebeccapurple;
+    	font-weight: bold;
 }
 p {
-    font-size: 17px;
+    	font-size: 17px;
 }
 ul {
-    font-size: 17px;
-    padding-bottom: 40px;
-    list-style-type: disc;
-    padding-left: 30px;
+    	font-size: 17px;
+    	padding-bottom: 40px;
+    	list-style-type: disc;
+    	padding-left: 30px;
 }
 abbr {
 	font-weight: bold;
@@ -47,25 +47,25 @@ abbr {
 /* grid layout */
 .page-wrapper { 
 	display: grid;
-    background-color: indigo;
-    width: 100%;
-    font-size: 17px;
-    font-family: sans-serif;
-    color: #23022E;
-    min-height: 100vh;
-    margin: 0;
-    grid-template-areas: 
-        "sidebar intro"
-        "sidebar main";
-    grid-template-columns: 1fr 3fr;
+    	background-color: indigo;
+    	width: 100%;
+    	font-size: 17px;
+    	font-family: sans-serif;
+    	color: #23022E;
+    	min-height: 100vh;
+    	margin: 0;
+    	grid-template-areas: 
+        	"sidebar intro"
+        	"sidebar main";
+    	grid-template-columns: 1fr 3fr;
 }
 
 /* intro, top box */
 .intro {
-    grid-area: intro;
-    background-color: rgb(92, 64, 120);
-    min-height: 300px;
-    padding: 50px;
+    	grid-area: intro;
+    	background-color: rgb(92, 64, 120);
+    	min-height: 300px;
+    	padding: 50px;
 	color: whitesmoke;
 }
 .intro h3{
@@ -80,10 +80,10 @@ abbr {
 
 /* main, bottom box */
 .main {
-    grid-area: main;
-    background-color: thistle;
-    min-height: 300px;
-    padding: 50px;
+	grid-area: main;
+	background-color: thistle;
+	min-height: 300px;
+	padding: 50px;
 }
 .main h3 {
 	color: rgb(92, 64, 120);
@@ -111,9 +111,10 @@ abbr {
 /* side bar */
 .sidebar {
 	grid-area: sidebar;
-    background-color: #EFE4F0;
-    min-height: 300px;
-    padding: 50px;
+	position: fixed;
+	background-color: #EFE4F0;
+	min-height: 300px;
+	padding: 50px;
 }
 .sidebar h3 {
 	color: #81906C;
@@ -142,13 +143,13 @@ abbr {
 	color: rgb(64, 68, 120);
 }
 
-/* page layout when screen is less than 900px wide */
-@media (max-width: 899px) {
-    .page-wrapper {
-        grid-template-areas: 
-			"intro"
-            "main"
-            "sidebar";
-        grid-template-columns: 1fr;
-    }
+/* page layout when screen is less than 1000px wide */
+@media (max-width: 999px) {
+    	.page-wrapper {
+        	grid-template-areas: 
+			"intro"	
+            		"main"
+            		"sidebar";
+        	grid-template-columns: 1fr;
+    	}
 }
