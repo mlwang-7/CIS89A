@@ -116,7 +116,7 @@ abbr {
 	min-height: 300px;
 	padding: 50px;
 	overflow-x: hidden;
-	height: 100vh;
+	height: 100%;
 	z-index: 1;
   	top: 0;
   	left: 0;
