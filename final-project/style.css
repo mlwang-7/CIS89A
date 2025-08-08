@@ -144,6 +144,7 @@ hr {
     color: white;
     font-size: 17px;
     font-weight: normal;
+    line-height: 24px;
 }
 
 /* gallery images */
@@ -196,9 +197,6 @@ hr {
 }
 .section p {
     color: white;
-}
-.section p:hover {
-    text-decoration: none;
 }
 .section:hover {
     transform: scale(1.05);
