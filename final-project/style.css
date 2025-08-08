@@ -1,0 +1,238 @@
+/* external CSS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rye&display=swap');
+
+/* general, basic elements */
+body {
+    color: white;
+    background-color: #1B1E3B;
+    font-family: Roboto, Arial, sans-serif;
+}
+h1 {
+    font-size: 20px;
+    margin: 10px 2% 10px;
+    color: white;
+    font-family: Rye, serif;
+}
+h2 {
+    font-size: 50px;
+    color: #F4E9AF;
+    font-weight: bold;
+    font-family: Rye, serif;
+}
+h3 {
+    font-size: 30px;
+    color: #E5BD67;
+    font-weight: bold;
+    font-family: Rye, serif;
+}
+h4 {
+    font-size: 25px;
+    color: #F4E9AF;
+    font-weight: bold;
+    font-family: Rye, serif;
+    margin-bottom: 10px;
+}
+p {
+    font-size: 17px;
+    line-height: 22px;
+}
+ul {
+    font-size: 17px;
+    list-style-type: disc;
+    padding-left: 30px;
+}
+ol {
+    font-size: 17px;
+    list-style-type: decimal;
+    padding-left: 30px;
+}
+li {
+    margin-bottom: 5px;
+}
+a:link {
+    color: #F1DA68;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:visited {
+    color: #E5BD67;
+}
+hr {
+    background-color: white;
+    height: 2px;
+}
+
+/* navigation bar */
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #2E3359;
+    font-family: sans-serif;
+}
+.navbar a {
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: white;
+}
+.navbar a:hover {
+    background: #778DA9;
+    color: black;
+}
+.navbar h1{
+    float: left;
+}
+
+/* grid layout */
+.grid-box {
+    display: grid;
+    background-color: #252B4A;
+    max-width: 1000px;
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    grid-template-areas: 
+        "main"
+        "footer";
+    grid-template-columns: 1fr;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.3), 10px 0 10px rgba(0, 0, 0, 0.3);
+}
+.main {
+    grid-area: main;
+    min-height: 100vh;
+    padding: 50px;
+}
+
+/* cards for ranking */
+.card {
+    background-color: floralwhite;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    color: black;
+    border-radius: 8px;
+}
+.card img {
+    width: 90%;
+}
+.card p {
+    font-style: italic;
+    color: black;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 8px 0px 0px;
+}
+.ranking {
+    font-size: 25px;
+    color: #E5BD67;
+    font-weight: bold;
+    font-family: Rye, serif;
+}
+.desc {
+    font-family: Roboto, Arial, sans-serif;
+    color: white;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+/* gallery images */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 16px;
+    padding: 15px;
+    text-align: center;
+}
+.gallery-item  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    background-color: floralwhite;
+}
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+.gallery img {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+.gallery p {
+    margin: 8px 0px 0px;
+    font-size: 18px;
+    font-style: italic;
+    color: black;
+}
+
+/* sections on home page */
+.section {
+    border-radius: 8px;
+    background-color: #2c3251;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+.section h4 {
+    color: #E5BD67;
+    margin: 0;
+}
+.section p {
+    color: white;
+}
+.section p:hover {
+    text-decoration: none;
+}
+.section:hover {
+    transform: scale(1.05);
+}
+
+/* footer */
+.footer {
+    grid-area: footer;
+    text-align: center;
+    font-family: sans-serif;
+    color: #E5BD67;
+    padding: 20px;
+}
+
+/* page edits when screen is less than 800px wide */
+@media (max-width: 799px) {
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 27px;
+    }
+}
+
+/* page edits when screen is less than 600px wide */
+@media (max-width: 599px) {
+    .navbar a {
+        padding: 15px 10px;
+        font-size: 16px;
+        display: block;
+        text-align: center;
+    }
+    .navbar h1 {
+        font-size: 18px;
+    }
+}
