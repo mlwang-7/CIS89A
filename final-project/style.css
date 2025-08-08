@@ -234,3 +234,10 @@ hr {
         font-size: 18px;
     }
 }
+
+/* page edits when screen is less than 405px wide */
+@media (max-width: 404px) {
+    .navbar h1 {
+        display: none;
+    }
+}
